@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vegan fitness</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <style>
+            
+            body{
+                background-color: whitesmoke;
+            }
+            
+            /*Logo settings*/
+            .fa {
+                font-size: 30px;
+                width: 50px;
+                text-align: center;
+                text-decoration: none;
+            }
+            .fa:hover{
+                opacity: 0.7;
+            }
+            .fa-facebook-official{
+                color: black;
+                
+            }
+            .fa-instagram {
+                color: black;
+            }
+            
+            .bg-white{
+                background-color: whitesmoke;
+            }
+            .container{
+                background-color: white;
+            }
+            
+            /* Header highlight */
+            .highlight_header{
+                background-image: url(plant_bg_pic.jpg);
+                color: white;
+                padding: 10px 10px;
+            }
+            /* Header font */
+            .text_header{
+                font-family: georgia, serif;
+                font-size: 3.5vw;
+                align-content: center;
+                padding-top: 3.7vw;
+                padding-bottom: 3.7vw;
+                margin-left: 27%;
+            }
+            /*main pic properties*/
+            .main-pic{
+                width: 100%;
+                height: auto;
+            }
+            /*Text settings*/
+            .text1{
+                font-size: 30px;
+                margin: 10%;
+                font-family: Arial, Helvetica, sans-serif;
+                
+            }
+            
+            .sample-text{
+                width: 100%;
+                font: 17px;
+                font-family: verdana, serif;
+                margin-left: auto;
+                margin-right: auto;
+                padding-bottom: 0.5vw;
+            }
+            /*Sample pic settings*/
+            .sample-pic{
+                width:100%;
+                height: 40%;
+                padding: 3px;
+              
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            /*sample Title Heading*/
+            .sample-heading{
+               text-align: center;
+                padding-top: 1vw;
+            }
+            
+            /*Subscribe box setting*/
+            .box1{
+                width: 320px;
+                padding: 1vw;
+                background-color: lightgray;
+            }
+            /*Box top*/
+            .box-top{
+                padding-top: 1vw;
+                padding-bottom: 0.5vw;
+                border: 0;
+                border-radius: 0;
+                margin-bottom: 0;
+                font-size: 1vw;
+                width: 320px;
+                letter-spacing: 0.1vw;
+                background-color: black;
+                
+            }
+            .box-top-text{
+                color: white;
+                margin-left: 30px;
+            }
+            
+            
+            bg-black{
+                background-color: aqua;
+            }
+            .bg-lightGray{
+                background-color: lightgray;
+            }
+           
+            
+            
+            .navbar{
+                padding-top: 0.3vw;
+                padding-bottom: 0.3vw;
+                border: 0;
+                border-radius: 0;
+                margin-bottom: 0;
+                font-size: 12px;
+                letter-spacing: 5px;
+                background-color: whitesmoke;
+            }
+            .navbar-right-text{
+                margin-top: 0.8vw;
+                margin-right: 0.3vw;
+                letter-spacing: 1px;
+                font-size: 1.5vw;
+            }
+            .navbar-nav li a:hover{
+                color: #1abc9c !important;
+            }
+            
+            /*Style for globe logo*/
+            .bg-Gray{
+                background-color: gray;
+            }
+            
+            /* hr tag */
+            hr{
+                margin-top: 2vw;
+                margin-bottom: 2vw;
+                margin-left: auto;
+                margin-right: auto;
+                border-style: inset;
+                border-width: 2px;
+                width: 40%;
+            }
+            
+            /*Subscribe button*/
+            .subscribe-button{
+                width: 100%;
+                
+            }
+            /*Footer setting*/
+            .footer{
+                margin: 0%;
+                height: 10vw;
+                background-color: gray;
+                color: white;
+                font-size: 12px;
+                text-align: center;
+                text-decoration: underline;
+                
+            }
+            
+            ul{
+                list-style: none;
+            }
+            a{
+                text-decoration: none;
+                cursor: pointer;
+            }
+            
+            .shadow-effect{
+                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+            .my-container{
+                background-color: white;
+                width: 100%;
+                margin-left: 3vw;
+            }
+            .my-container-insta{
+                background-color: whitesmoke;
+                width: 300px;
+                height: 478px;
+                margin-left: 3vw;
+            }
+            .my-container-boxes{
+                background-color: whitesmoke;
+                width: 320px;
+                height: auto;
+                margin-left: 3vw;
+            }
+            
+            /*Pop up thingy*/
+            /* Full-width input fields */
+            input[type=text], input[type=password] {
+                width: 90%;
+                padding: 12px 20px;
+                margin: 8px 26px;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+                font-size:16px;
+            }
+            
+            /* Set a style for all buttons */
+            .myButton {
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 26px;
+                border: none;
+                cursor: pointer;
+                width: 90%;
+                font-size:20px;
+            }
+            
+            .myButton:hover {
+                opacity: 0.8;
+            }
+            /* Center the image and position the close button */
+            .imgcontainer {
+                text-align: center;
+                margin: 24px 0 12px 0;
+                position: relative;
+            }
+            
+            /* The Modal (background) */
+            .modal {
+                display:none;
+                position: fixed;
+                z-index: 1;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgba(0,0,0,0.4);
+            }
+            /* Modal Content Box */
+            .modal-content {
+                background-color: #fefefe;
+                margin: 4% auto 15% auto;
+                border: 1px solid #888;
+                width: 50%; 
+                padding-bottom: 30px;
+            }
+            /* The Close Button (x) */
+            .close {
+                position: absolute;
+                right: 25px;
+                top: 0;
+                color: #000;
+                font-size: 35px;
+                font-weight: bold;
+            }
+            .close:hover,.close:focus {
+                color: red;
+                cursor: pointer;
+            }
+            /* Add Zoom Animation */
+            .animate {
+                animation: zoom 0.6s
+            }
+            @keyframes zoom {
+                from {transform: scale(0)} 
+                to {transform: scale(1)}
+            }
+            
+            /*Slide in animation*/
+            .slideanim {visibility:hidden;}
+            .slide {
+                /* The name of the animation */
+                animation-name: slide;
+                -webkit-animation-name: slide; 
+                /* The duration of the animation */
+                animation-duration: 1s; 
+                -webkit-animation-duration: 1s;
+                /* Make the element visible */
+                visibility: visible; 
+            }
+            /* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+            @keyframes slide {
+                0% {
+                    opacity: 0;
+                    transform: translateY(70%);
+                } 
+                100% {
+                    opacity: 1;
+                    transform: translateY(0%);
+                } 
+            }
+            @-webkit-keyframes slide {
+                0% {
+                    opacity: 0;
+                    -webkit-transform: translateY(70%);
+                } 
+                100% {
+                    opacity: 1;
+                    -webkit-transform: translateY(0%);
+                }
+            }
+            
+           
+        </style>
+    </head>
+    <body>
+        
+        <nav class="navbar navbar-default">
+          
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#myNavBar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Plant-built Fitness</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavBar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="navbar-right-text"><a onclick="document.getElementById('modal-wrapper').style.display='block'">Contact</a></li>
+                        
+                        <div id="modal-wrapper" class="modal">
+  
+                            <form class="modal-content animate" action="/action_page.php">
+                                
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+                                    <h1 style="text-align:center">Contact us</h1>
+                                </div>
+                                <div class="my-container- boxes">
+                                    <input type="text" placeholder="Name" name="uname">
+                                    <input style="height: 8vw" type="text" placeholder="Message" name="psw">      
+                                    <a style="background-color: blue; margin-left: 2vw" href="#" class="btn btn-info btn-lg">
+                                        <span class="glyphicon glyphicon-send"></span> Send 
+                                    </a>
+                                </div>
+                                
+                            </form>
+                            
+                        </div>
+                        <div id="sign-up-button" class="modal">
+  
+                            <form class="modal-content animate" action="/action_page.php">
+                                
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('sign-up-button').style.display='none'" class="close" title="Close PopUp">&times;</span>
+                                    <h1 style="text-align:center">Sign up</h1>
+                                </div>
+                                <div class="my-container- boxes">
+                                    <input type="text" placeholder="Enter Username" name="uname">
+                                    <input type="password" placeholder="Enter Password" name="psw">        
+                                    <button class="myButton" type="submit">Login</button>
+                                    <input type="checkbox" style="margin:26px 30px;"> Remember me      
+                                    <a href="#" style="text-decoration:none; float:right; margin-right:34px; margin-top:26px;">Forgot Password ?</a>
+                                </div>
+                                
+                            </form>
+                            
+                        </div>
+                        <li class="navbar-right-text"><a onclick="document.getElementById('sign-up-button').style.display='block'">Sign up</a></li>
+                       
+                    </ul>
+                </div>
+           
+        </nav>
+        
+        
+        
+        <img src="main_pic1.jpg" class="img img-responsive main-pic">
+            
+        <br>
+        
+        <p class="text1 slideanim">People switch to a vegan lifestyle for many different reasons: to stop contributing to the unnecessary exploitation of animals, help protect the planet or simply to feel healthier and energetic. Here, we'll focus more on attaining your fitness goals on a vegan diet, whether its about packing on muscle mass and strength, losing excess fat, or simply maintaining a healthy lifestyle. </p>
+        
+        <hr>
+        
+        
+          <div class="col-sm-6"  style="margin: 3vw">
+               <div class="my-container shadow-effect">
+                    <h2 class="slideanim sample-heading">Title Heading</h2>
+                    <p class="slideanim sample-heading">Title description, date</p>
+                    <img src="sample_pic1.jpg" class="img img-responsive sample-pic slideanim">
+                    <p class="slideanim sample-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                </div>
+              
+              <br>
+              <div class="my-container shadow-effect">
+                  <h2 class="slideanim sample-heading">Title Heading</h2>
+                    <p class="slideanim sample-heading">Title description, date</p>
+                    <img src="sample_pic2.jpg" class="img img-responsive sample-pic slideanim">
+                    <p class="slideanim sample-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              </div>
+              <br>
+              <div class="my-container shadow-effect">
+                  <h2 class="slideanim sample-heading">Title Heading</h2>
+            <p class="slideanim sample-heading">Title description, date</p>
+            <img src="sample_pic3.jpg" class="img img-responsive sample-pic slideanim">
+            <p class="slideanim sample-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              </div>
+        </div>
+
+        
+        <div class="col-sm-4" style="margin: 4vw;">
+             <div class="slideanim shadow-effect my-container-insta">
+                    <!-- InstaWidget -->
+                    <a  href="https://instawidget.net/v/user/_powered_by_plants" id="link-14df4d2b97401d17e4bca6980bd8a919908bdb5ae3eac247c6d41b11b7c61ff1" class="">@_powered_by_plants</a>
+                    <script src="https://instawidget.net/js/instawidget.js?u=14df4d2b97401d17e4bca6980bd8a919908bdb5ae3eac247c6d41b11b7c61ff1&width=300px"></script>
+                    </div>
+            
+            
+            <br><br>
+            
+            <div class="slideanim shadow-effect my-container-boxes">
+                        <div class="box-top">
+                            <p class="box-top-text">SUBSCRIBE</p>
+                        </div>
+                        <div class="box1">
+                            <p>Enter your email below and get notified on the latest posts!</p>
+                            <p><input type="text" placeholder="Enter e-mail" style="width:100%"></p>
+                            <button class="btn btn-danger" style="width: 100%">Subscribe</button>
+                        </div>
+                    </div>
+            
+                    <br><br>
+            
+                    <div class="slideanim shadow-effect my-container-boxes">
+                        <div class="box-top">
+                            <p class="box-top-text">FOLLOW ME</p>
+                        </div>
+                        <div class="box1">
+                            <i onclick="openFacebook()" class="fa fa-facebook-official w3-hover-opacity"></i>
+                            <i onclick="openInsta()" class="fa fa-instagram w3-hover-opacity"></i>
+                            <i style="font-size:24px" class="fa">&#xf1a0;</i>
+                        </div>
+                    </div>
+        </div>
+               
+      
+        
+        <script>
+            $(window).scroll(function() {
+                $(".slideanim").each(function(){
+                    var pos = $(this).offset().top;
+                    var winTop = $(window).scrollTop();
+                    if (pos < winTop + 600) {
+                        $(this).addClass("slide");
+                    }
+                });
+            });
+            
+            function openFacebook(){
+                window.open("https://www.facebook.com/Plant-Based-Fitness-514545222328559/?view_public_for=514545222328559");
+            }
+            function openInsta(){
+                window.open("https://www.instagram.com/_powered_by_plants/");
+            }
+            
+            // If user clicks anywhere outside of the modal, Modal will close
+            var modal = document.getElementById('modal-wrapper');
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+    </body>
+</html>
